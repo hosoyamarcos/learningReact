@@ -5,9 +5,7 @@
 
 ## Getting Started
 
-    git clone https://github.com/jkup/webpack-react-starter.git
-    cd webpack-react-starter
     npm install
-    npm start
+    npm run dev
 
 Then just open http://localhost:8080 in your browser!
