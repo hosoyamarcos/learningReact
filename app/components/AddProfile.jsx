@@ -5,7 +5,7 @@ export default class AddProfile extends React.Component {
         return (
             <div>
                 <p>Add profile here</p>
-                <button onClick={this.props.addUser}>Add User</button>
+                <button onClick={this.props.addUser}>Add</button>
             </div>
         )
     }
