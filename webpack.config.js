@@ -1,7 +1,7 @@
 var path = require('path');
 
-var APP_DIR = path.resolve(__dirname, 'app')
-var BUILD_DIR = path.resolve(__dirname, 'build');
+var APP_DIR = path.resolve(__dirname , 'app')
+var BUILD_DIR = path.resolve(__dirname,'build');
 
 
 var config = {
