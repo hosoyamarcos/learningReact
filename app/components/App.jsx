@@ -15,10 +15,10 @@ export default class App extends React.Component {
         this.addUser = this.addUser.bind(this)
     }
 
-    addUser(e) {
-        var person = {name: "billy" , age: '22', objects: ['cup', 'mouse', 'keyboard']}
+    addUser(newProfile) {
+        console.log(newProfile)
         this.setState({
-            people : this.state.people.concat([person])
+            people : this.state.people.concat([newProfile])
         })
     }
 
