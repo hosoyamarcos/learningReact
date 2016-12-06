@@ -15,7 +15,8 @@ var config = {
   devServer: {
     inline: true,
     contentBase: BUILD_DIR,
-    port: 3333
+    port: 3333,
+    historyApiFallback: true
   },
   module: {
     loaders: [{
