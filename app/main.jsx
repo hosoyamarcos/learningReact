@@ -1,18 +1,35 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Route, Router, browserHistory, IndexRoute} from 'react-router'
 
-import App from './pages/App.jsx'
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
+import constants from './constants/app-constants.js'
+console.log(constants)
 
-ReactDOM.render(
-    (
-        <Router history={browserHistory}>
-            <Route path="/" component={App}>
-                <IndexRoute component={Home}/>
-                <Route path='/home' component={Home}/>
-                <Route path='/about' component={About}/>
-            </Route>
-        </Router>)
-    , document.getElementById('app'));
+class App extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            count: 0
+        }
+        this.increment = this.increment.bind(this)
+    }
+
+    increment (){
+        this.setState ({
+            count: this.state.count +1
+        })
+    }
+
+    render() {
+        return(
+            <div>
+                <p>Hello world</p>
+                <p>Count: {this.state.count}</p>
+                <button onClick={this.increment} >Add</button>
+            </div>
+        )
+    }
+
+}
+
+
+ReactDOM.render(<App/>, document.getElementById('app'));
