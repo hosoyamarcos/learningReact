@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+
 import constants from './constants/app-constants.js'
-console.log(constants)
+import {incrementActions} from './actions/app-actions.js'
 
 class App extends React.Component {
     constructor(props) {
@@ -14,9 +15,7 @@ class App extends React.Component {
     }
 
     increment (){
-        this.setState ({
-            count: this.state.count +1
-        })
+        incrementActions.incrementCount()
     }
 
     render() {

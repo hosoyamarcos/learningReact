@@ -1,3 +1,11 @@
 import constants from '../constants/app-constants.js'
+import dispatcher from '../dispatcher/dispatcher.js'
 
-console.log(constants)
+export let incrementActions = {
+    incrementCount: () => {
+        console.log('Increment action dispatched')
+        dispatcher.dispatch({
+            actionType: constants.INCREMENT
+        })
+    }
+}
