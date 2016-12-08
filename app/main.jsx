@@ -1,19 +1,10 @@
-var React = require('react');
+import React from 'react'
 import ReactDOM from 'react-dom'
+import {createStore} from 'redux'
+import reducer from './reducers/index.js'
 
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+let store = createStore(reducer)
 
-  render() {
-    return (
-        <div>
-          <h1>Hello world</h1>
-          <p>Hi there</p>
-        </div>
-    )
-  }
-}
+import App from './components/App.jsx'
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App store={store} />, document.getElementById('app'));
