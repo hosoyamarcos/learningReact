@@ -1,5 +1,6 @@
 let constants = {
-    INCREMENT: 'INCREMENT'
+    INCREMENT: 'INCREMENT',
+    DECLINE: 'DECLINE'
 }
 
 export default constants

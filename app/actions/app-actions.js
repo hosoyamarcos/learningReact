@@ -1,11 +1,16 @@
 import constants from '../constants/app-constants.js'
 import dispatcher from '../dispatcher/dispatcher.js'
 
-export let incrementActions = {
+export let Actions = {
     incrementCount: () => {
-        console.log('Increment action dispatched')
         dispatcher.dispatch({
             actionType: constants.INCREMENT
         })
+    },
+    declineCount: () => {
+        dispatcher.dispatch({
+            actionType: constants.DECLINE
+        })
     }
+
 }
