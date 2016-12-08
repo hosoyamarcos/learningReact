@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-
-import constants from './constants/app-constants.js'
 import {Actions} from './actions/app-actions.js'
 import {TodoStore} from './stores/count-store.js'
 
