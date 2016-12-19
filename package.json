@@ -4,7 +4,7 @@
   "description": "A starter template for react and webpack",
   "scripts": {
     "build": "webpack",
-    "dev" :"webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "babel-preset-react": "^6.16.0",
     "react": "*",
     "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
     "webpack-dev-server": "*"
   }
 }
