@@ -9,4 +9,12 @@ describe('shoppingCart reducer', () => {
             shoppingCart([], {type: "ADD_TO_CART", payload: id})
         ).to.eql([22])
     })
+
+    it('can remove prods', () => {
+        let id = {id:22}
+        let state = shoppingCart([], {type: "ADD_TO_CART", payload: id})
+        expect(
+            shoppingCart(state, {type: "REMOVE_FROM_CART", payload: id})
+        ).to.eql([])
+    })
 })
