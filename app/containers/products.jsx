@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import Products from '../components/products.jsx'
 
 function mapStateToProps (state) {
+    console.log(state)
     return {products: state.products}
 }
 

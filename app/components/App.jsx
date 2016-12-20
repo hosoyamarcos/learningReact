@@ -3,6 +3,8 @@ import React, {Component} from 'react'
 import Products from '../containers/products.jsx'
 import ShoppingCart from '../containers/shoppingCart.jsx'
 
+console.log(Products)
+
 class App extends Component {
     render(){
         return (
